@@ -5,13 +5,11 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function nextSlide(n) {
-  console.log("iv'e been clicked");
   showSlides((slideIndex += n));
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  console.log("iǘe been clicked");
   showSlides((slideIndex = n));
 }
 
