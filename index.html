@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slider</title>
+  <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  </link>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header class="text-center m-3">
+    <h1>Image slider</h1>
+  </header>
+  <section class="container text-center">
+    <div class="row">
+      <div class="col-12">
+        <div class="slider-container d-flex justify-content-center">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="static/pexels-paul-ijsendoorn-33041.jpg" />
+            <div class="content">Lorem ipsum dolor sit amet</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="static/pexels-roman-odintsov-4553622.jpg" />
+            <div class="content">Lorem ipsum dolor sit amet</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="static/pexels-simon-migaj-747964.jpg" />
+            <div class="content">Lorem ipsum dolor sit amet</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="static/pexels-emiliano-arano-1295138.jpg" />
+            <div class="content">Lorem ipsum dolor sit amet</div>
+          </div>
+        </div>
+        <button class="btn btn-danger prev" onclick="nextSlide(-1)">&#10094;</button>
+        <button class="btn btn-danger next" onclick="nextSlide(1)">&#10095;</button>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
